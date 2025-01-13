@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+
+import { Link } from "react-router-dom";
 export default function MovieIndexPage() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
@@ -7,15 +9,17 @@ export default function MovieIndexPage() {
       .then((res) => res.json())
       .then((data) => {
         setMovies(data.movies);
-        console.log(movies);
       });
   }, []);
+  console.log(movies);
   return (
     <main className="movies-content">
       <div className="container">
         <ul>
           {movies.map((movie) => (
-            <li key={movie.id}>{movie.title}</li>
+            <li key={movie.id}>
+              <Link to={"/movie/" + movie.id}>{movie.title}</Link>
+            </li>
           ))}
         </ul>
       </div>

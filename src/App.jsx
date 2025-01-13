@@ -17,7 +17,7 @@ function App() {
           <Route path="about" Component={AboutPage} />
           <Route path="movie">
             <Route index Component={MovieIndexPage} />
-            <Route path=":id" />
+            <Route path=":id" Component={ShowPage} />
           </Route>
         </Route>
       </Routes>
