@@ -1,7 +1,7 @@
 export default function AboutPage() {
   return (
-    <div className="wrapper">
+    <main className="about-content">
       <div className="conatiner"></div>
-    </div>
+    </main>
   );
 }

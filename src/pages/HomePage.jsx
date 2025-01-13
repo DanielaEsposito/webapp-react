@@ -1,7 +1,7 @@
 export default function HomePage() {
   return (
-    <div className="wrapper">
+    <main className="home-content">
       <div className="conatiner"></div>
-    </div>
+    </main>
   );
 }
