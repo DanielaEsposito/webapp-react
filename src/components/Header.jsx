@@ -1,11 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg " data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Webapp-React
-        </a>
+        <h1 className="navbar-title">MOVIES REACT</h1>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,7 +18,7 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <NavLink className="nav-link active" aria-current="page" href="#">
+              <NavLink className="nav-link " aria-current="page" to="/">
                 Home
               </NavLink>
             </li>
