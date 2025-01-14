@@ -34,6 +34,17 @@ export default function Header() {
             </li>
           </ul>
         </div>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Cerca film e serie tv"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-warning" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </nav>
   );
