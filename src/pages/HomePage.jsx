@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Carosello from "../components/Carosello";
 export default function HomePage() {
   const slaiderConfig = {
@@ -33,6 +34,10 @@ export default function HomePage() {
           <div className="tilte-container">
             <h1 className="home-page-title">MOVIE REACT</h1>
             <h2>La tua guida allo streaming per serie Tv e Film</h2>
+            <h3>Scopri di più</h3>
+            <Link to="/movie" className="btn btn-warning fw-bold my-4">
+              Scopri tutti i film
+            </Link>
           </div>
         </section>
         <section id="new-relases">
