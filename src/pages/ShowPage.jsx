@@ -15,13 +15,12 @@ export default function ShowPage() {
   console.log(movie);
 
   const streamingPlatforms = [
-    { name: "amazonprime", image: "streaming_platforms_img/amazonprime.svg" },
-    { name: "discovery", image: "streaming_platforms_img/discovery.png" },
-    { name: "disney", image: "streaming_platforms_img/disney.svg" },
-    { name: "netflix", image: "streaming_platforms_img/netflix.png" },
-    { name: "raiplay", image: "streaming_platforms_img/raiplay.png" },
-
-    { name: "youtube", image: "streaming_platforms_img/youtube.png" },
+    { name: "amazonprime", image: "/streaming_platforms_img/amazonprime.svg" },
+    { name: "discovery", image: "/streaming_platforms_img/discovery.png" },
+    { name: "disney", image: "/treaming_platforms_img/disney.svg" },
+    { name: "netflix", image: "/streaming_platforms_img/netflix.png" },
+    { name: "raiplay", image: "/streaming_platforms_img/raiplay.png" },
+    { name: "youtube", image: "/streaming_platforms_img/youtube.png" },
   ];
   return (
     <main className="single-movie-content">
@@ -66,7 +65,7 @@ export default function ShowPage() {
                     </div>
                     <div className="col-6">
                       <div className="generals">
-                        <i class="fa-solid fa-thumbs-up"></i> 22k
+                        <i className="fa-solid fa-thumbs-up"></i> 22k
                       </div>
                     </div>
                     <div className="col-6">
@@ -76,12 +75,12 @@ export default function ShowPage() {
                     </div>
                     <div className="col-6">
                       <div className="generals">
-                        <i class="fa-solid fa-bookmark"></i> Whatchlist
+                        <i className="fa-solid fa-bookmark"></i> Whatchlist
                       </div>
                     </div>
                     <div className="col-6">
                       <div className="generals">
-                        <i class="fa-solid fa-check"></i> Visto
+                        <i className="fa-solid fa-check"></i> Visto
                       </div>
                     </div>
                     <div className="col-12">
