@@ -17,10 +17,10 @@ export default function ShowPage() {
   const streamingPlatforms = [
     { name: "amazonprime", image: "/streaming_platforms_img/amazonprime.svg" },
     { name: "discovery", image: "/streaming_platforms_img/discovery.png" },
-    { name: "disney", image: "/treaming_platforms_img/disney.svg" },
     { name: "netflix", image: "/streaming_platforms_img/netflix.png" },
     { name: "raiplay", image: "/streaming_platforms_img/raiplay.png" },
     { name: "youtube", image: "/streaming_platforms_img/youtube.png" },
+    { name: "v", image: "/streaming_platforms_img/v.png" },
   ];
   return (
     <main className="single-movie-content">

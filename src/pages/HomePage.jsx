@@ -24,6 +24,17 @@ export default function HomePage() {
   return (
     <main className="home-content">
       <div className="conatiner">
+        <section id="jumbo">
+          <img
+            src="bg-homepage.jpg"
+            alt="homepage-bg"
+            className="homepage-bg"
+          />
+          <div className="tilte-container">
+            <h1 className="home-page-title">MOVIE REACT</h1>
+            <h2>La tua guida allo streaming per serie Tv e Film</h2>
+          </div>
+        </section>
         <section id="new-relases">
           <div className="container">
             <h2 className="section-title">Novità</h2>
