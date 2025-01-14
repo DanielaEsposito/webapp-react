@@ -4,7 +4,7 @@ export default function Carosello({ config }) {
     <>
       <div id={name} className="carousel slide">
         <div className="carousel-indicators">
-          {slides.map((slide, index) => {
+          {slides.map((slide, index) => (
             <button
               type="button"
               data-bs-target={`#${name}`}
@@ -12,19 +12,28 @@ export default function Carosello({ config }) {
               className={index === 0 ? "active" : ""}
               aria-current={index === 0 ? "active" : ""}
               aria-label={slide.title}
-            ></button>;
-          })}
+            ></button>
+          ))}
         </div>
         <div className="carousel-inner h-100">
-          {slides.map((slide, index) => {
+          {slides.map((slide, index) => (
             <div key={index} className="carousel-item active">
-              <img
-                src={slide.image}
-                className="d-block w-100"
-                alt={slide.title}
-              />
-            </div>;
-          })}
+              <div className="content d-flex">
+                <div className="text-container col-8">
+                  <h2 className="slide-title">{slide.title}</h2>
+                  <h3>Info:</h3>
+                  <p>{slide.text}</p>
+                </div>
+                <div className="img-container col-4">
+                  <img
+                    src={slide.image}
+                    className="img-carosello "
+                    alt={slide.title}
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
         <button
           className="carousel-control-prev"
