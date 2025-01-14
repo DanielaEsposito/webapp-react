@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import Card from "../components/Card";
 import { Link } from "react-router-dom";
 export default function MovieIndexPage() {
   const [movies, setMovies] = useState([]);
@@ -14,15 +14,14 @@ export default function MovieIndexPage() {
   console.log(movies);
   return (
     <main className="movies-content">
-      <div className="container">
-        <ul>
+      <div className="container d-flex">
+        <div className="row row-cols-4">
           {movies.map((movie) => (
-            <li key={movie.id}>
-              <Link to={"/movie/" + movie.id}>{movie.title}</Link>
-            </li>
+            <Card key={movie.id} title={movie.title} img={movie.image} />
           ))}
-        </ul>
+        </div>
       </div>
     </main>
+    //<Link to={"/movie/" + movie.id}></Link>
   );
 }
