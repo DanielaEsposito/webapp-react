@@ -3,7 +3,7 @@ export default function Carosello({ config }) {
   return (
     <>
       <div id={name} className="carousel slide">
-        <div className="carousel-indicators">
+        {/* <div className="carousel-indicators">
           {slides.map((slide, index) => (
             <button
               key={index}
@@ -15,8 +15,8 @@ export default function Carosello({ config }) {
               aria-label={slide.title}
             ></button>
           ))}
-        </div>
-        <div className="carousel-inner h-100">
+        </div> */}
+        <div className="carousel-inner ">
           {slides.map((slide, index) => (
             <div key={index} className="carousel-item active">
               <div className="content d-flex">
@@ -28,7 +28,7 @@ export default function Carosello({ config }) {
                 <div className="img-container col-4">
                   <img
                     src={slide.image}
-                    className="img-carosello img-fluid"
+                    className="img-carosello "
                     alt={slide.title}
                   />
                 </div>

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import FormReviews from "../components/FrormReviews";
 export default function ShowPage() {
   const [movie, setMovie] = useState(null);
-  const id = useParams().id;
+  const movieId = useParams().id;
   useEffect(() => {
     const url = import.meta.env.VITE_BACKEND_URL;
-    fetch(`${url}/movies/${id}`)
+    fetch(`${url}/movies/${movieId}`)
       .then((res) => res.json())
       .then((data) => {
         setMovie(data.movie);
@@ -26,10 +27,14 @@ export default function ShowPage() {
     const stars = [];
     for (let i = 0; i < 5; i++) {
       const star = (
-        <i class={`fa-${i < vote ? "solid" : "regular"} fa-star`}></i>
+        <i
+          key={i}
+          className={`fa-${i < vote ? "solid" : "regular"} fa-star`}
+        ></i>
       );
       stars.push(star);
     }
+
     return stars;
   };
   return (
@@ -122,7 +127,7 @@ export default function ShowPage() {
       </section>
       <section id="reviews">
         <div className="container">
-          <h2 className="subtitle-section">Rcensioni</h2>
+          <h2 className="subtitle-section col-6">Rcensioni</h2>
           <div className="reviews d-flex">
             {movie &&
               movie.reviews.map((review, index) => (
@@ -132,6 +137,9 @@ export default function ShowPage() {
                   <p>{review.text}</p>
                 </div>
               ))}
+          </div>
+          <div className="form-reviews d-flex col-6">
+            <FormReviews movieId={movieId} />
           </div>
         </div>
       </section>

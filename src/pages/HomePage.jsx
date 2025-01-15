@@ -9,12 +9,12 @@ export default function HomePage() {
         title: "BETTER MAN",
       },
       {
-        image: "/film_relased_img/here.jpg",
+        image: "/film_relased_img/here-2024.jpg",
         text: `Un film di Robert ZemeckiS con Kelly Reilly, Tom Hanks e Robin Wright distribuito da Eagle Pictures`,
         title: "HERE",
       },
       {
-        image: "/film_relased_img/nosferatu.jpg",
+        image: "/film_relased_img/nosferatu-2.jpg",
         text: `Un film di Robert Eggers con Lily-Rose Depp, Nicholas Hoult e Bill Skarsgård distribuito da Universal Pictures`,
         title: "NOSFERATU",
       },
