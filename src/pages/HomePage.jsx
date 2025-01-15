@@ -32,17 +32,17 @@ export default function HomePage() {
             className="homepage-bg"
           />
           <div className="tilte-container">
-            <h1 className="home-page-title">MOVIE REACT</h1>
+            <h1 className="home-page-title">MOVIES REACT</h1>
             <h2>La tua guida allo streaming per serie Tv e Film</h2>
             <h3>Scopri di più</h3>
-            <Link to="/movie" className="btn btn-warning  my-4 ">
+            <Link to="/movie" className="btn btn-warning fw-semibold my-4 ">
               Scopri tutti i film
             </Link>
           </div>
         </section>
         <section id="new-relases">
           <div className="container">
-            <h2 className="section-title">Novità</h2>
+            <h2 className="section-title fw-bold">Novità</h2>
             <Carosello config={slaiderConfig} />
           </div>
         </section>

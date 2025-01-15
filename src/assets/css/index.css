@@ -81,6 +81,7 @@ body {
   transform: translate(50%, -50%);
 }
 #new-relases {
+  padding: 40px 0px;
   background-color: black;
 }
 .section-title,
@@ -184,6 +185,7 @@ ul {
 /*FOOTER*/
 footer {
   padding: 50px 0px;
+  background-color: rgb(4, 6, 8);
 }
 .break-line {
   width: 100%;

@@ -7,7 +7,7 @@ export default function Card({ img, title, src }) {
           <img src={img} alt={title} className=" img-card " />
           <div className="overlay">
             <h3>{title}</h3>
-            <Link to={src} className="btn btn-warning my-2">
+            <Link to={src} className="btn btn-warning fw-semibold my-2">
               See more
             </Link>
           </div>

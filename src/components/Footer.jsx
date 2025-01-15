@@ -16,7 +16,7 @@ export default function Footer() {
             <Link to="/about">About us</Link>
           </div>
           <div className="web-informations col-6">
-            <p>Created by Daniela Esposito Bollean 134</p>
+            <p>Created by Daniela Esposito Boolean 134</p>
           </div>
         </div>
       </div>

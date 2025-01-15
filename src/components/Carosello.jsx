@@ -28,7 +28,7 @@ export default function Carosello({ config }) {
                 <div className="img-container col-4">
                   <img
                     src={slide.image}
-                    className="img-carosello "
+                    className="img-carosello img-fluid"
                     alt={slide.title}
                   />
                 </div>
@@ -42,7 +42,11 @@ export default function Carosello({ config }) {
           data-bs-target={`#${name}`}
           data-bs-slide="prev"
         >
-          9
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
         </button>
         <button
           className="carousel-control-next"
@@ -50,7 +54,11 @@ export default function Carosello({ config }) {
           data-bs-target={`#${name}`}
           data-bs-slide="next"
         >
-          2
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
         </button>
       </div>
     </>
