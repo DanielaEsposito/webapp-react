@@ -35,7 +35,7 @@ export default function MovieIndexPage() {
           </h3>
           <div className="streaming-platforms d-flex">
             {streamingPlatforms.map((platform) => (
-              <div key={platform.name} className="platform-container my-5 ">
+              <div key={platform.id} className="platform-container my-5 ">
                 <img
                   src={platform.image}
                   alt={platform.name}

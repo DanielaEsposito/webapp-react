@@ -6,6 +6,7 @@ export default function Carosello({ config }) {
         <div className="carousel-indicators">
           {slides.map((slide, index) => (
             <button
+              key={index}
               type="button"
               data-bs-target={`#${name}`}
               data-bs-slide-to={index}

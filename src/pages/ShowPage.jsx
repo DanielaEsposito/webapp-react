@@ -70,7 +70,7 @@ export default function ShowPage() {
                     </div>
                     <div className="col-6">
                       <div className="generals">
-                        <i class="fa-solid fa-thumbs-down"></i> 120k
+                        <i className="fa-solid fa-thumbs-down"></i> 120k
                       </div>
                     </div>
                     <div className="col-6">
@@ -107,6 +107,21 @@ export default function ShowPage() {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+      <section id="reviews">
+        <div className="container">
+          <h2 className="subtitle-section">Rcensioni</h2>
+          <div className="reviews d-flex">
+            {movie &&
+              movie.reviews.map((review, index) => (
+                <div key={index} className="review-container ">
+                  <h4 className="fw-bold">{review.name}</h4>
+                  <p>Voto: {review.vote}</p>
+                  <p>{review.text}</p>
+                </div>
+              ))}
           </div>
         </div>
       </section>

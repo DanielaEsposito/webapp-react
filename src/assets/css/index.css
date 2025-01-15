@@ -163,10 +163,23 @@ ul {
   cursor: pointer;
 }
 .generals:hover {
-  background-color: rgba(42, 64, 102, 0.829);
+  background-color: rgba(7, 10, 15, 0.829);
 }
 .generals:active {
   background-color: rgba(78, 121, 194, 0.829);
+}
+/*show page reviews*/
+#reviews {
+  background-color: rgb(9, 13, 20);
+  padding: 30px 0px;
+}
+.review-container {
+  background-color: rgba(42, 64, 102, 0.425);
+  border: 1px solid rgb(42, 64, 102);
+  color: white;
+  border-radius: 10px;
+  margin: 20px 10px 10px 0px;
+  padding: 10px;
 }
 /*FOOTER*/
 footer {
