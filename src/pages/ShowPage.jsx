@@ -22,6 +22,16 @@ export default function ShowPage() {
     { name: "youtube", image: "/streaming_platforms_img/youtube.png" },
     { name: "v", image: "/streaming_platforms_img/v.png" },
   ];
+  const generateStars = (vote) => {
+    const stars = [];
+    for (let i = 0; i < 5; i++) {
+      const star = (
+        <i class={`fa-${i < vote ? "solid" : "regular"} fa-star`}></i>
+      );
+      stars.push(star);
+    }
+    return stars;
+  };
   return (
     <main className="single-movie-content">
       <section id="movie-description-section">
@@ -118,7 +128,7 @@ export default function ShowPage() {
               movie.reviews.map((review, index) => (
                 <div key={index} className="review-container ">
                   <h4 className="fw-bold">{review.name}</h4>
-                  <p>Voto: {review.vote}</p>
+                  <p>Voto: {generateStars(review.vote).map((star) => star)}</p>
                   <p>{review.text}</p>
                 </div>
               ))}
